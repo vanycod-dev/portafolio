@@ -1,0 +1,207 @@
+/* ----- RESET ----- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ----- NAVBAR ----- */
+header {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4A90E2;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #2d5aa0;
+}
+
+/* ----- ACERCA DE MÍ ----- */
+.acerca-de-mi {
+    text-align: center;
+    padding: 80px 20px 40px;
+}
+
+.acerca-de-mi section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.acerca-de-mi img {
+    width: 180px;
+    border-radius: 40%;
+    border: 5px solid #4A90E2;
+    transition: transform 0.3s ease-in-out;
+}
+
+.acerca-de-mi img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.acerca-de-mi h1 {
+    font-size: 2em;
+    max-width: 600px;
+}
+
+.acerca-de-mi span {
+    color: #4A90E2;
+}
+
+.acerca-de-mi p {
+    font-size: 1.1em;
+    margin-top: 70px;
+}
+
+/* ----- TECNOLOGÍAS ----- */
+.tecnologias {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.tecnologias h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #4A90E2;
+}
+
+.container-tarjeta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    justify-content: center;
+}
+
+.tarjeta {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta img {
+    width: 50px;
+}
+
+.tarjeta h6 {
+    font-size: 1em;
+    color: #4A90E2;
+    margin-top: 10px;
+}
+
+/* ----- PROYECTOS ----- */
+.Proyectos {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.Proyectos h3 {
+    font-size: 1.8em;
+    color: #4A90E2;
+    margin-bottom: 20px;
+}
+
+.tarjeta-proyectos {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tarjeta-proyectos:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta-proyectos img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.tarjeta-proyectos h4 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.tarjeta-proyectos p {
+    font-size: 1em;
+}
+
+/* ----- FOOTER CON REDES SOCIALES ----- */
+footer {
+    text-align: center;
+    background: #fff;
+    padding: 10px 0;
+    margin-top: 40px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.redes-sociales a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #4A90E2;
+    color: white;
+    font-size: 1.2em;
+    transition: background 0.3s ease-in-out;
+}
+
+.redes-sociales a:hover {
+    background: #2d5aa0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .acerca-de-mi section {
+        flex-direction: column;
+    }
+
+    .container-tarjeta {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
