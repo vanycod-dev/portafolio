@@ -8,6 +8,9 @@
     --warning: #ffbe0b;
     --danger: #ef476f;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 /* Reset y estilos base */
 * {
