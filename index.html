@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhovan Hernández Ramírez</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Acerca de mí</a>
+            <a href="#">Habilidades</a>
+            <a href="#">Proyectos</a>
+        </nav>
+    </header>
+    <main>
+        <div class="header">
+            <img src="src/img/fotos/jhovan.jpeg" alt="Foto mia de perfil" class="foto-perfil">
+            <div class="titulo">
+                <h1>Jhovan Hernández Ramírez</h1>
+                <p>Desarrollador web y programador</p>
+                <div class="redes">
+                    <a href="#">Github</a>
+                    <a href="#">Linkedin</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Correo</a>
+                    <a href="#">CV</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenido de la página -->
+        <section class="acerca-de-mi">
+            <h2>Acerca de mí</h2>
+            <p>Hola, si llegaste hasta aquí es porque buscas a alguien que te ayude con el desarrollo de algún proyecto o, si ya cuentas con uno, necesitas una mano adicional para implementar soluciones en equipo. Ya sea en grupos pequeños o grandes, con poco tiempo o un calendario ajustado, puedo ayudarte. Aunque no tengo un trabajo formal en el ámbito del desarrollo de software, sí cuento con experiencia en entornos donde el tiempo es limitado y se requieren soluciones rápidas para alcanzar metas. Si continúas bajando, verás mi experiencia en desarrollo, así como las tecnologías que manejo.</p>
+        </section>
+        <section class="habilidades">
+            <h2>Habilidades</h2>
+            <p>Poseo experiencia tanto en frontend como en backend, lo que me permite desempeñarme como desarrollador Fullstack. No obstante, comprendo que cada área exige dominar stacks tecnológicos específicos, por lo que la definición de 'Fullstack' puede variar según el contexto.
+                <br>
+            A continuación detallo las tecnologías que domino, y más adelante podrás ver ejemplos concretos de implementaciones que he realizado:</p>
+            <div class="contenedor-tarjetas">
+                
+                <div class="tarjetas">
+                    
+                    <div class="tarjeta">
+                        <h4>HTML</h4>
+                        <img src="src/img/tecnologias/html.svg" alt="imgen HTML">
+                    </div>
+                    <div class="tarjeta">
+                        <h4>CSS</h4>
+                        <img src="src/img/tecnologias/css.svg" alt="imgen CSS">
+                    </div>
+                    <div class="tarjeta">
+                        <h4>JavaScript</h4>
+                        <img src="src/img/tecnologias/javascript.svg" alt="imgen JavaScript">
+                    </div>
+                    <div class="tarjeta">
+                        <h4>Tailwind CSS</h4>
+                        <img src="src/img/tecnologias/tailwindcss-mark.d52e9897.svg" alt="imgen Tailwind CSS">
+                    </div>
+                    <div class="tarjeta">
+                        <h4>React</h4>
+                        <img src="src/img/tecnologias/react.svg" alt="imgen React">
+                    </div>
+
+                    <div class="tarjeta">
+                        <h4>Node.js</h4>
+                        <img src="src/img/tecnologias/nodejs.svg" alt="imgen Node.js">
+                    </div>
+                    <div class="tarjeta">
+                        <h4>Express</h4>
+                        <img src="src/img/tecnologias/express.png" alt="imgen Express">
+                    </div>
+                    <div class="tarjeta">
+                        <h4>MySQL</h4>
+                        <img src="src/img/tecnologias/mysql.svg" alt="imgen MySQL">
+                    </div>
+                    <div class="tarjeta">
+                        <h4>PostgreSQL</h4>
+                        <img src="src/img/tecnologias/postgresql.svg" alt="imgen PostgreSQL">
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+        <section class="proyectos">
+
+            <h2>Proyectos</h2>
+            <p>A continuación puedes ver los proyectos que he desarrollado utilizando algunas de las tecnologías mencionadas anteriormente. Actualmente sigo trabajando en nuevos desarrollos que iré incorporando a mi portafolio.</p>
+            
+            <div class="contenedor-proyectos">
+            
+                <div class="proyecto">
+                    <h3>Buscador de imágenes</h3>
+                    <p>Proyecto que consume la API gratuita de Unsplash para acceder y mostrar su banco de imágenes. Desarrollado como una SPA (Single Page Application), utilizando: html, css y javascript vanilla, manejando respuestas JSON.</p>
+                    </p>
+                    <a href="#">Ver proyecto</a>
+                </div>
+                <div class="proyecto">
+                    <h3>Gestor de Metas</h3>
+                    <p>Gestor de Metas Progresivas - Aplicación web SPA (Single Page Application) desarrollada con JavaScript vanilla que permite crear, editar y eliminar objetivos personales, incluyendo una barra de progreso interactiva que se actualiza automáticamente. Utiliza localStorage para persistencia de datos sin necesidad de backend, con interfaz responsive construida con HTML5 semántico y CSS3 moderno.</p>
+                    <a href="#">Ver proyecto</a>
+                </div>
+                <div class="proyecto">
+                    <h3>Proyecto 3</h3>
+                    <p>Aplicación completa que te permite crear notas tanto de manera local como en la nube, para que puedas acceder a ellas desde cualquier lugar con solo tu usuario y contraseña. Desarrollé tanto el frontend como el backend y la base de datos, utilizando servidores diferentes pero conectados entre sí. Tecnologías implementadas: Frontend: HTML, CSS, JavaScript, React, React Router y Tailwind CSS,Backend: Node.js con Express, Base de datos: MySQL</p>
+                    <a href="#">Ver proyecto</a>
+                </div>
+            </div>
+        </section>
+        <section class="contacto">
+            <h2>Contacto</h2>
+            <form
+                action="https://formspree.io/f/myyqknjv"
+                method="POST"
+                >
+                <label>
+                    Your email:
+                    <input type="email" name="email">
+                </label>
+                <label>
+                    Your message:
+                    <textarea name="message"></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
